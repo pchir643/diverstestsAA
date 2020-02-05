@@ -17,6 +17,7 @@ gem 'webpacker'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
 gem 'devise'
+gem 'kaminari'
 
 
 group :development do

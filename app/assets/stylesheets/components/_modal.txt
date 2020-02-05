@@ -1,0 +1,17 @@
+#exampleModal {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px 20px;
+  color: $orange;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.modal-body {
+  background-color: black;
+}
+
+.modal-header {
+    background-color: black;
+
+}

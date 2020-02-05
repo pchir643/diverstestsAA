@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Produits</h1>
+  <%= paginate @products %>
+  <div class="row">
+    <table>
+    <tr>
+      <th>Nom</th>
+      <th>Categorie</th>
+      <th>Fonctions</th>
+    </tr>
+    <% @products.each do |product| %>
+    <tr>
+      <td> <p class="card-title"><%= product.name %></p> </td>
+      <td> <p class="card-text"><%= product.category.name %></p> </td>
+      <td> 
+        <%= link_to "", product_path(product), class:"fas fa-eye" %>
+        <%= link_to "", edit_product_path(product), class:"fas fa-edit" %>
+        <%= link_to "", product_path(product), class:"fas fa-trash",
+          method: :delete,
+          data: { confirm: "Confirmation ?" } %>
+      </td>
+    </tr>
+    <% end %>
+    </table>
+    <%= paginate @products %>
+  </div>
+</div>

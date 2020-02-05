@@ -1,0 +1,7 @@
+<div class="form">
+  <%= simple_form_for(@product) do |f| %>
+    <%= f.input :name %>
+    <%= f.association :category %>
+    <%= f.submit "Enr", class: "btn btn-success" %>
+  <% end %>
+</div>

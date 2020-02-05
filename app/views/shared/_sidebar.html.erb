@@ -1,0 +1,9 @@
+<div class="sidenav">
+  <%= link_to "Listes", products_path %>
+  <a href="#">Recherche</a>
+  <%= link_to "Ajout", new_product_path %>
+  <% if admin_user_signed_in? && admin_current_user.admin %>
+    <%= link_to "Admin", :root %>
+  <% end %>
+  <a href="#">About</a>
+</div>
